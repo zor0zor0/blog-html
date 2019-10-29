@@ -43,6 +43,18 @@ ul li{
 .py-1{
     padding: 1.5rem 0;
 }
+.px-1{
+    padding: 0 1.5rem;
+}
+.mr-1{
+    margin-right: 1rem;
+}
+.box-shadow{
+    box-shadow: 5px 10px 8px #888888;
+}
+.half-width{
+    width:50%;
+}
 /* Navbar */
 #navbar{
     width: 100vw;
@@ -153,33 +165,55 @@ background: rgba(0,0,0,0.4);
     flex:1;
 }
 
-/* Articles */
+/* Left Articles */
 
 #articles{
     display: flex;
-    flex-direction: column;
     margin-top: 1rem;
     width: 100vw;
-    justify-content: space-around;
 }
 #left-articles{
     flex:2;
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background:var(--background-color);
 }
 #left-articles .box{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    padding-left:10px;
+    width:100%;
+    height: 300px;
 }
 
 #left-articles .box .article-img{
     background: url(../images/aa22.jpg) no-repeat left/cover ;
-    height: 400px;
     width: 300px;
+    position: absolute;
+    top: -25px;
+    right:25px;
+    bottom: -25px;
+
     /* position: absolute; */
 }
+#left-articles .box .hr-line{
+    border-bottom: 1px solid black;
+    width: 25%;
+}
+#left-articles .box .btn-container{
+    display:flex;
+    align-items: center;
+}
+#left-articles .box .btn-container .text-secondary-color{
+    padding-left:40px;
+    align-self: center;
+}
+
+/* Right Articles */
 #right-articles{
     flex:1;
+    background: red;
+}
+.map{
+    height: 350px;
 }
