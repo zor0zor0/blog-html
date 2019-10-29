@@ -20,8 +20,9 @@ p{
 ul li{
     list-style: none;
 }
+/* Ultility class */
 .btn{
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     display: inline-block;
 }
 .btn-primary{
@@ -29,8 +30,22 @@ ul li{
     border: 1px solid white;
     border-radius: 2px;
 }
+.btn-secondary{
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+.text-primary-color{
+    color:var(--primary-color);
+}
+.text-secondary-color{
+    color:var(--text-color);
+}
+.py-1{
+    padding: 1.5rem 0;
+}
+/* Navbar */
 #navbar{
-    widows: 100vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -45,7 +60,8 @@ background:var(--background-color);
 #navbar .nav-menus{
     align-self: center;
 }
-#navbar .nav-icons span{
+#navbar .nav-icons span,
+.media{
     margin: 0 0.5rem;
     font-size: 1.2rem;
     flex:1;
@@ -70,6 +86,8 @@ background:var(--background-color);
 #navbar .nav-menus ul li .active{
     color: grey;
 }
+
+/* Header */
 #main-header{
     width: 100vw;
     position: relative;
@@ -98,7 +116,7 @@ background: rgba(0,0,0,0.4);
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:300px;
+    top:20vh;
     left:50px;
     color: white;
     flex: 1;
@@ -135,3 +153,33 @@ background: rgba(0,0,0,0.4);
     flex:1;
 }
 
+/* Articles */
+
+#articles{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100vw;
+    justify-content: space-around;
+}
+#left-articles{
+    flex:2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#left-articles .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-articles .box .article-img{
+    background: url(../images/aa22.jpg) no-repeat left/cover ;
+    height: 400px;
+    width: 300px;
+    /* position: absolute; */
+}
+#right-articles{
+    flex:1;
+}
