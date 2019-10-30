@@ -36,7 +36,7 @@ ul li{
 }
 .btn-3{
 border: 1px solid grey;
-padding: 0.25rem 0.5rem;
+padding: 0.25rem 0.8rem;
 margin: 0 0.5rem;
 }
 .text-primary-color{
@@ -47,6 +47,9 @@ margin: 0 0.5rem;
 }
 .text-white{
 color: #ffff;
+}
+.text-center{
+    text-align: center;
 }
 .p-1{
     padding: 1rem;
@@ -311,6 +314,12 @@ background: rgba(0,0,0,0.4);
     background: none;
     justify-content: center;
 }
+#left-articles .box-nav-bottom .previous{
+    border-radius: 5px 0 0 5px;
+}
+#left-articles .box-nav-bottom .next{
+    border-radius: 0 5px 5px 0;
+}
 /* Right Articles */
 #right-articles{
     flex:1;
@@ -429,4 +438,67 @@ width: 100%;
 }
 #right-articles .box-6 .blogs-container .blog-img-3{
     background:url(../images/bb3.jpg) no-repeat center center/cover;
+}
+#right-articles .box-7,
+#right-articles .box-7 .contact-form{
+    display: flex;
+    flex-direction: column;
+}
+#right-articles .box-7 .contact-form input,
+#right-articles .box-7 .contact-form textarea{
+    margin: 1rem;
+}
+#right-articles .box-7 .btn{
+    margin: 1rem;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+}
+#main-footer{
+    background: black;
+    height: 800px;
+    position: relative;
+    margin-top: 1rem;
+}
+#main-footer .background-img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 1rem;
+    top:-2rem;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+#main-footer .background-img .img-top,
+#main-footer .background-img .img-bottom{
+    display: flex;
+}
+#main-footer .background-img .img-footer{
+    flex:1;
+    height: 140px;
+}
+#main-footer .background-img .img-top .img-1{
+    background: url(../images/g3.jpg) top/cover;
+}
+#main-footer .background-img .img-top .img-2{
+    background: url(../images/g1.jpg) top/cover;
+}
+#main-footer .background-img .img-top .img-3{
+    background: url(../images/g4.jpg) top/cover;
+}
+#main-footer .background-img .img-top .img-4{
+    background: url(../images/g2.jpg) top/cover;
+}
+#main-footer .background-img .img-bottom .img-1{
+    background: url(../images/g1.jpg) bottom/cover;
+}
+#main-footer .background-img .img-bottom .img-2{
+    background: url(../images/g4.jpg) bottom/cover;
+}
+#main-footer .background-img .img-bottom .img-3{
+    background: url(../images/g2.jpg) bottom/cover;
+}
+#main-footer .background-img .img-bottom .img-4{
+    background: url(../images/g3.jpg) bottom/cover;
 }
