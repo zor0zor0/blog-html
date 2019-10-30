@@ -1,6 +1,6 @@
 :root{
     --primary-color:#5159c9;
-    --background-color:#ebecf7;
+    --background-color:white;
     --text-color:#2d3030;
 }
 *{
@@ -33,6 +33,11 @@ ul li{
 .btn-secondary{
     background: var(--primary-color);
     border-radius: 2px;
+}
+.btn-3{
+border: 1px solid grey;
+padding: 0.25rem 0.5rem;
+margin: 0 0.5rem;
 }
 .text-primary-color{
     color:var(--primary-color);
@@ -93,7 +98,7 @@ color: #ffff;
 }
 #navbar .nav-icons,
 #navbar .nav-menus{
-padding: 1rem;
+padding: 0.5rem;
 background:var(--background-color);
 }
 #navbar .nav-menus{
@@ -206,7 +211,7 @@ background: rgba(0,0,0,0.4);
     justify-content: flex-start;
 }
 #left-articles .box{
-    background:var(--background-color);
+    background:white;
 }
 #left-articles .box1,
 #left-articles .box3{
@@ -277,9 +282,33 @@ background: rgba(0,0,0,0.4);
     left:25px;
     bottom: -25px;
 }
+#left-articles .box4{
+    display: flex;
+}
+#left-articles .box4 .box-split{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#left-articles .box4 .article-img{
+    height:300px;
+    background: url(../images/aa22.jpg) center center/cover;
+}
+#left-articles .box4 .btn-container{
+    justify-content: center;
+    align-items: center;
+}
+#left-articles .box-nav-bottom{
+    display:flex;
+    background: none;
+    justify-content: center;
+}
 /* Right Articles */
 #right-articles{
     flex:1;
+    display: flex;
+    flex-direction: column;
 }
 .map{
     height: 350px;
@@ -294,4 +323,11 @@ background: rgba(0,0,0,0.4);
     width: 95%;
     border: 1px solid black;
     bottom: 2rem;
+}
+#right-articles .box-2{
+    text-align: center;
+}
+#right-articles .box-2 .article-img{
+background: url(../images/aa1.jpg) no-repeat center center/cover;
+height: 300px;
 }
