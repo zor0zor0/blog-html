@@ -529,6 +529,8 @@ width: 100%;
 #main-footer .footer-bottom .copy-right{
     color: black;
     background: white;
+    width: 100%;
+    text-align: center;
 }
 #main-footer .footer-bottom .copy-right span{
     color: var(--primary-color);
